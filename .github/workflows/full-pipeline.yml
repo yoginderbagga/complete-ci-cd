@@ -1,0 +1,17 @@
+#Goal: Demonstrate a Full WORKING CI CD PIPELINE
+name: CI/CD Full Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+  steps:
+    - name: Checkout the Code
+      uses: checkout/actions@v4
+
+    - name: Build Docker image
+      uses: checkout@docker
