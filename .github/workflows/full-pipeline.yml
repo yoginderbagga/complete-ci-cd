@@ -28,9 +28,10 @@ jobs:
 
       - name: Build Docker image
         run: | 
-          docker build 
-            -t ${{ secrets.DOCKER_USERNAME }}/complete-ci-cd:latest .
-            -t ${{ secrets.DOCKER_USERNAME }}/complete-ci-cd:sha-${{ env.SHORT_SHA }} .
+          docker build \
+            -t ${{ secrets.DOCKER_USERNAME }}/complete-ci-cd:latest \
+            -t ${{ secrets.DOCKER_USERNAME }}/complete-ci-cd:sha-${{ env.SHORT_SHA }} \ 
+            .
 
       - name: Push Image
         run: |
