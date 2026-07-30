@@ -1,4 +1,4 @@
-#Goal: Demonstrate a Full WORKING CI CD PIPELINE with DOCKER
+#Goal: DEMONSTRATE FULL WORKING CI CD PIPELINE with DOCKER
 name: CI/CD Full Pipeline
 
 on:
